@@ -1,0 +1,37 @@
+<h1>Modal</h1>
+<hr />
+
+{{ mensaje }}
+
+<hr />
+
+<a
+  (click)="abrirModal()"
+  class="btn btn-primary"
+  href="javascript:void(0)"
+  role="button"
+>
+  Abrir modal
+</a>
+
+<a
+  (click)="abrirModalNoManual()"
+  class="btn btn-primary"
+  href="javascript:void(0)"
+  role="button"
+>
+  Abrir modal no manual
+</a>
+
+<codice-modal [id]="idModal" (cerrado)="modalCerrado()">
+  <h1>Funciona!</h1>
+</codice-modal>
+
+<codice-modal
+  [id]="idModalNoManual"
+  (cerrado)="modalCerradoNoManual()"
+  (abierto)="contadorDeModalNoManual()"
+  [permitirCierreManual]="false"
+>
+  <h1>Funciona!, Este mondal se va a cerrar en {{ contador }}</h1>
+</codice-modal>

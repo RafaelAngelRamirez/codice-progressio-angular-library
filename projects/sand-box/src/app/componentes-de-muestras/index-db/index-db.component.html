@@ -1,0 +1,104 @@
+<h1 class="display-4">Index-DB</h1>
+<hr />
+
+<h2 *ngIf="cargando">...CARGANDO...</h2>
+
+<div class="form-group">
+  <input [formControl]="buscador" type="text" class="form-control" />
+
+  <hr />
+  <div class="row">
+    <div *ngIf="contacto.id" class="col-12 col-md-6">
+      <div class="form-group">
+        <label for="">id</label>
+        <input [(ngModel)]="contacto.id" type="text" class="form-control" />
+      </div>
+    </div>
+    <div class="col-12 col-md-6">
+      <div class="form-group">
+        <label for="">Nombre</label>
+        <input [(ngModel)]="contacto.nombre" type="text" class="form-control" />
+      </div>
+    </div>
+    <div class="col-12 col-md-6">
+      <div class="form-group">
+        <label for="">Telefono</label>
+        <input
+          [(ngModel)]="contacto.telefono"
+          type="text"
+          class="form-control"
+        />
+      </div>
+    </div>
+  </div>
+
+  <a
+    (click)="agregarDato(contacto)"
+    class="btn btn-primary"
+    href="javascript:void(0)"
+    role="button"
+    >Agregar</a
+  >
+</div>
+
+<nav aria-label="Page navigation example">
+  <ul class="pagination">
+    <li class="page-item">
+      <a (click)="anterior()" class="page-link" href="javascript:void(0)"
+        >Previous</a
+      >
+    </li>
+    <li class="page-item">
+      <a (click)="siguiente()" class="page-link" href="javascript:void(0)"
+        >Next</a
+      >
+    </li>
+  </ul>
+</nav>
+
+Total de elementos: {{ total }}
+<table class="table table-sm">
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Nombre</th>
+      <th>Telefono</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of datosMostrar">
+      <td>{{ item.id }}</td>
+      <td>{{ item.nombre }}</td>
+      <td>{{ item.telefono }}</td>
+      <td>
+        <a
+          (click)="actualizar(item)"
+          class="btn btn-primary btn-xs"
+          href="javascript:void(0)"
+          role="button"
+          >ACTUALIZAR</a
+        >
+      </td>
+      <td>
+        <a
+          (click)="eliminar(item)"
+          class="btn btn-danger btn-xs"
+          href="javascript:void(0)"
+          role="button"
+          >X</a
+        >
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<a
+  (click)="eliminarTodo()"
+  class="btn btn-danger"
+  href="javascipt:void(0)"
+  role="button"
+  >Eliminar todo</a
+>
