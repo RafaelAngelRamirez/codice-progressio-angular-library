@@ -10,6 +10,7 @@ import { ModalComponent } from './componentes-de-muestras/modal/modal.component'
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import { InputValidacionesModule } from '../../../input-validaciones/src/lib/input-validaciones.module';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { CommonModule } from '@angular/common';
     ReactiveFormsModule,
     ModalModule,
     CommonModule,
+    InputValidacionesModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

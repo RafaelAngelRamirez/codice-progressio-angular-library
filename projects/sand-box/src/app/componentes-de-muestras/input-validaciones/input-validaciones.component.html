@@ -1,1 +1,33 @@
-<p>input-validaciones works!</p>
+<h1>Input Validaciones</h1>
+<hr />
+<div class="row">
+  <form [formGroup]="formulario">
+    <!-- 
+    =====================================
+     campo
+    =====================================
+    -->
+    <div class="col-12">
+      <div class="form-group">
+        <input
+          [ngClass]="{
+            'is-invalid': vs.invalid(formulario.controls.campo),
+            'is-valid': vs.valid(formulario.controls.campo)
+          }"
+          type="text"
+          class="form-control"
+          formControlName="campo"
+        />
+        <small id="helpId" class="form-text text-muted"
+          >Descripcion del input</small
+        >
+        <codice-validaciones [campo]="formulario.controls.campo"></codice-validaciones>
+      </div>
+    </div>
+    <!-- 
+    =====================================
+     END campo
+    =====================================
+    -->
+  </form>
+</div>

@@ -152,9 +152,7 @@
               "projects/indexed-db/tsconfig.lib.json",
               "projects/indexed-db/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
+            "exclude": ["**/node_modules/**"]
           }
         }
       }
@@ -192,9 +190,7 @@
               "projects/estatus-conexion/tsconfig.lib.json",
               "projects/estatus-conexion/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
+            "exclude": ["**/node_modules/**"]
           }
         }
       }
@@ -232,9 +228,7 @@
               "projects/gps/tsconfig.lib.json",
               "projects/gps/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
+            "exclude": ["**/node_modules/**"]
           }
         }
       }
@@ -272,9 +266,7 @@
               "projects/zebra-printer/tsconfig.lib.json",
               "projects/zebra-printer/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
+            "exclude": ["**/node_modules/**"]
           }
         }
       }
@@ -312,53 +304,12 @@
               "projects/modal/tsconfig.lib.json",
               "projects/modal/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
+            "exclude": ["**/node_modules/**"]
           }
         }
       }
     },
-    "@codice-progressio/input-validaciones": {
-      "projectType": "library",
-      "root": "projects/codice-progressio/input-validaciones",
-      "sourceRoot": "projects/codice-progressio/input-validaciones/src",
-      "prefix": "lib",
-      "architect": {
-        "build": {
-          "builder": "@angular-devkit/build-angular:ng-packagr",
-          "options": {
-            "tsConfig": "projects/codice-progressio/input-validaciones/tsconfig.lib.json",
-            "project": "projects/codice-progressio/input-validaciones/ng-package.json"
-          },
-          "configurations": {
-            "production": {
-              "tsConfig": "projects/codice-progressio/input-validaciones/tsconfig.lib.prod.json"
-            }
-          }
-        },
-        "test": {
-          "builder": "@angular-devkit/build-angular:karma",
-          "options": {
-            "main": "projects/codice-progressio/input-validaciones/src/test.ts",
-            "tsConfig": "projects/codice-progressio/input-validaciones/tsconfig.spec.json",
-            "karmaConfig": "projects/codice-progressio/input-validaciones/karma.conf.js"
-          }
-        },
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": [
-              "projects/codice-progressio/input-validaciones/tsconfig.lib.json",
-              "projects/codice-progressio/input-validaciones/tsconfig.spec.json"
-            ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
-          }
-        }
-      }
-    },
+
     "input-validaciones": {
       "projectType": "library",
       "root": "projects/input-validaciones",
@@ -392,9 +343,7 @@
               "projects/input-validaciones/tsconfig.lib.json",
               "projects/input-validaciones/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
+            "exclude": ["**/node_modules/**"]
           }
         }
       }
