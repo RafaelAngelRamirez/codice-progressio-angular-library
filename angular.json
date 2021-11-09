@@ -94,17 +94,6 @@
             "scripts": []
           }
         },
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": [
-              "projects/sand-box/tsconfig.app.json",
-              "projects/sand-box/tsconfig.spec.json",
-              "projects/sand-box/e2e/tsconfig.json"
-            ],
-            "exclude": ["**/node_modules/**"]
-          }
-        },
         "e2e": {
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
@@ -144,16 +133,6 @@
             "tsConfig": "projects/indexed-db/tsconfig.spec.json",
             "karmaConfig": "projects/indexed-db/karma.conf.js"
           }
-        },
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": [
-              "projects/indexed-db/tsconfig.lib.json",
-              "projects/indexed-db/tsconfig.spec.json"
-            ],
-            "exclude": ["**/node_modules/**"]
-          }
         }
       }
     },
@@ -181,16 +160,6 @@
             "main": "projects/estatus-conexion/src/test.ts",
             "tsConfig": "projects/estatus-conexion/tsconfig.spec.json",
             "karmaConfig": "projects/estatus-conexion/karma.conf.js"
-          }
-        },
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": [
-              "projects/estatus-conexion/tsconfig.lib.json",
-              "projects/estatus-conexion/tsconfig.spec.json"
-            ],
-            "exclude": ["**/node_modules/**"]
           }
         }
       }
@@ -220,16 +189,6 @@
             "tsConfig": "projects/gps/tsconfig.spec.json",
             "karmaConfig": "projects/gps/karma.conf.js"
           }
-        },
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": [
-              "projects/gps/tsconfig.lib.json",
-              "projects/gps/tsconfig.spec.json"
-            ],
-            "exclude": ["**/node_modules/**"]
-          }
         }
       }
     },
@@ -257,16 +216,6 @@
             "main": "projects/zebra-printer/src/test.ts",
             "tsConfig": "projects/zebra-printer/tsconfig.spec.json",
             "karmaConfig": "projects/zebra-printer/karma.conf.js"
-          }
-        },
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": [
-              "projects/zebra-printer/tsconfig.lib.json",
-              "projects/zebra-printer/tsconfig.spec.json"
-            ],
-            "exclude": ["**/node_modules/**"]
           }
         }
       }
@@ -296,16 +245,6 @@
             "tsConfig": "projects/modal/tsconfig.spec.json",
             "karmaConfig": "projects/modal/karma.conf.js"
           }
-        },
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": [
-              "projects/modal/tsconfig.lib.json",
-              "projects/modal/tsconfig.spec.json"
-            ],
-            "exclude": ["**/node_modules/**"]
-          }
         }
       }
     },
@@ -334,16 +273,6 @@
             "main": "projects/input-validaciones/src/test.ts",
             "tsConfig": "projects/input-validaciones/tsconfig.spec.json",
             "karmaConfig": "projects/input-validaciones/karma.conf.js"
-          }
-        },
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": [
-              "projects/input-validaciones/tsconfig.lib.json",
-              "projects/input-validaciones/tsconfig.spec.json"
-            ],
-            "exclude": ["**/node_modules/**"]
           }
         }
       }
