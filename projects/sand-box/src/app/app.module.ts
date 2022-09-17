@@ -11,6 +11,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { InputValidacionesModule } from '../../../input-validaciones/src/lib/input-validaciones.module';
+import { BuscadorComponent } from './componentes-de-muestras/buscador/buscador.component';
+import { BuscadorModule } from 'projects/buscador/src/public-api'
 
 @NgModule({
   declarations: [
@@ -20,12 +22,14 @@ import { InputValidacionesModule } from '../../../input-validaciones/src/lib/inp
     GpsComponent,
     IndexDbComponent,
     ModalComponent,
+    BuscadorComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,
     ModalModule,
+    BuscadorModule,
     CommonModule,
     InputValidacionesModule,
   ],
