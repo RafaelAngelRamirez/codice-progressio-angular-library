@@ -6,6 +6,8 @@
     "start": "node server.js",
     "start-local": "ng serve -o --ssl true --ssl-key ./node_modules/@codice-progressio/easy-https/cert/desarrollo.key --ssl-cert ./node_modules/@codice-progressio/easy-https/cert/desarrollo.crt --host 0.0.0.0 --port 4300 ",
     "build": "ng build --configuration production --outputHashing=all",
+    "build-buscador": "ng build buscador --configuration production --outputHashing=all",
+
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",

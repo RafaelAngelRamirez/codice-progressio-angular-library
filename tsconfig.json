@@ -20,6 +20,10 @@
         "dist/indexed-db/indexed-db",
         "dist/indexed-db"
       ],
+      "buscador": [
+        "dist/buscador/buscador",
+        "dist/buscador"
+      ],
       "estatus-conexion": [
         "dist/estatus-conexion/estatus-conexion",
         "dist/estatus-conexion"
